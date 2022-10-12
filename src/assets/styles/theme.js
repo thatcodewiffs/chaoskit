@@ -244,9 +244,9 @@ const fontSize = {
   small: 14,
   base: 16,
   medium: 18,
-  large: 20,
-  xlarge: 26,
-  '2xlarge': 34,
+  large: 21,
+  xlarge: 28,
+  '2xlarge': 37,
   '3xlarge': 42,
   '4xlarge': 50,
   '5xlarge': 75,
@@ -271,14 +271,14 @@ const height = {
 
 const lineHeight = {
   base: 1.65,
-  medium: 1.5,
-  small: 1.25,
+  medium: 1.2,
+  small: 1.1,
 }
 
 const letterSpacing = {
-  negative: '-0.125em',
+  negative: '-0.1em',
   base: 'normal',
-  extended: '0.125em',
+  extended: '0.1em',
 }
 
 const space = {
@@ -458,7 +458,7 @@ const text = {
       `${breakpoint.small}px`,
       `${breakpoint.large}px`
     ),
-    lineHeight: lineHeight.small,
+    lineHeight: 1,
   },
   '5xlarge': {
     fontSize: fontSize['5xlarge'],
@@ -498,12 +498,12 @@ const headingPreset = {
   h4: {
     ...text.xlarge__fluid,
     fontWeight: fontWeight.bold,
-    fontFamily: fontFamily.heading,
+    fontFamily: fontFamily.base,
   },
   h5: {
     ...text.large__fluid,
     fontWeight: fontWeight.bold,
-    fontFamily: fontFamily.heading,
+    fontFamily: fontFamily.base,
   },
 }
 
